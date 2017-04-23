@@ -21,10 +21,10 @@
 
 - (NSArray<id<IGListDiffable>> *)getAllTheData {
     NSMutableArray<TableRowSectionModel *> *sortedData = [@[[[TableRowHeaderSectionModel alloc]  initWithRowHeight:50.0 andHeaders: @[
-                            [[TableCellModel alloc] initWithLabel: @"4-1"],
-                            [[TableCellModel alloc] initWithLabel: @"4-2"],
-                            [[TableCellModel alloc] initWithLabel: @"4-3"],
-                            [[TableCellModel alloc] initWithLabel: @"4-4"]]]] mutableCopy];
+                                    [[TableCellModel alloc] initWithLabel: @"First"],
+                                    [[TableCellModel alloc] initWithLabel: @"Second"],
+                                    [[TableCellModel alloc] initWithLabel: @"Third"],
+                                    [[TableCellModel alloc] initWithLabel: @"Fours"]]]] mutableCopy];
     [sortedData addObjectsFromArray:[self.data sortedArrayUsingComparator:^NSComparisonResult(TableRowSectionModel *obj1, TableRowSectionModel *obj2) {
         if (obj1.index < obj2.index) return NSOrderedAscending;
         if (obj1.index > obj2.index) return NSOrderedDescending;
