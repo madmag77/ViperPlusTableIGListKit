@@ -20,11 +20,12 @@
 #pragma mark - Methods TestTableInteractorInput
 
 - (NSArray<id<IGListDiffable>> *)getAllTheData {
-    NSArray<TableRowSectionModel *> *sortedData = [self.data sortedArrayUsingComparator:^NSComparisonResult(TableRowSectionModel *obj1, TableRowSectionModel *obj2) {
+    NSMutableArray<TableRowSectionModel *> *sortedData = [@[[[TableRowHeaderSectionModel alloc]  initWithRowHeight:50.0 andHeaders:@[@"First", @"Second", @"Third", @"Fours"]]] mutableCopy];
+    [sortedData addObjectsFromArray:[self.data sortedArrayUsingComparator:^NSComparisonResult(TableRowSectionModel *obj1, TableRowSectionModel *obj2) {
         if (obj1.index < obj2.index) return NSOrderedAscending;
         if (obj1.index > obj2.index) return NSOrderedDescending;
         return NSOrderedSame;
-    }];
+    }]];
     return sortedData;
 }
 

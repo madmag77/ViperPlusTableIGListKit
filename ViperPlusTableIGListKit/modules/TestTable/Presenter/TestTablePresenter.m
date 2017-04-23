@@ -12,6 +12,8 @@
 #import "TestTableRouterInput.h"
 #import <IGListKit/IGListKit.h>
 #import "TableRowSectionController.h"
+#import "TableRowHeaderSectionController.h"
+#import "TableRowSectionModel.h"
 
 @interface TestTablePresenter() <IGListAdapterDataSource>
 
@@ -42,7 +44,10 @@
 }
 
 - (IGListSectionController <IGListSectionType> *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    return [TableRowSectionController new];
+    if ([object isKindOfClass:[TableRowSectionModel class]]) return [TableRowSectionController new];
+    if ([object isKindOfClass:[TableRowHeaderSectionModel class]]) return [TableRowHeaderSectionController new];
+    NSAssert(false, @"Unknown object of class %@", [object class]);
+    return nil;
 }
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {

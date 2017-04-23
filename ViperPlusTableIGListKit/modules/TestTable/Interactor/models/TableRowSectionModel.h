@@ -16,3 +16,9 @@
 @property CGSize cellSize;
 - (id)initWithIndex:(NSUInteger)index andData:(NSArray<NSString *> *)data;
 @end
+
+@interface TableRowHeaderSectionModel : NSObject <IGListDiffable>
+@property NSArray<NSString *> *headers;
+@property CGSize cellSize;
+- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<NSString *> *)headers;
+@end

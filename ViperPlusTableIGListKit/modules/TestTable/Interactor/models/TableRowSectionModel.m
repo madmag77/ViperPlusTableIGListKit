@@ -35,3 +35,29 @@ const CGSize DefaultCellSize = {100, 100};
 }
 
 @end
+
+@implementation TableRowHeaderSectionModel
+
+- (id)init {
+    NSAssert(false, @"Use initWithRowHeight instead");
+    return nil;
+}
+
+- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<NSString *> *)headers {
+    self = [super init];
+    if (self) {
+        self.headers = headers;
+        self.cellSize = CGSizeMake(DefaultCellSize.width, rowHeight);
+    }
+    return self;
+}
+
+- (nonnull id<NSObject>)diffIdentifier {
+    return self;
+}
+
+- (BOOL)isEqualToDiffableObject:(nullable id<IGListDiffable>)object {
+    return [self isEqual:object];
+}
+
+@end
