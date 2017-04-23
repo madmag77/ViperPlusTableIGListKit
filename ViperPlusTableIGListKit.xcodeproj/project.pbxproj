@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12B44C4FDC578FF3B7DF281E /* TestTableInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2715435D41F8ED2106808A8E /* TestTableInteractorTests.m */; };
+		2F427E125AEC30FAEE0208FC /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F91131C0D2F9B499693C4B /* TestTableViewController.m */; };
+		48BF76898DB073610709BBE6 /* TestTableRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23992F884C127C35C7CCEB /* TestTableRouterTests.m */; };
+		7EDAE0803F5637CF177D332F /* TestTableInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA8FC2FFDC7952C45FAC86 /* TestTableInteractor.m */; };
+		9749F6F66A08CCFA64488029 /* TestTableAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885D4E486CC1629A30239E0 /* TestTableAssemblyTests.m */; };
+		98348E3E71C107CB56F71768 /* Pods_ViperPlusTableIGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63716B0B8422EDFB9A0E062A /* Pods_ViperPlusTableIGListKit.framework */; };
+		9BBCEDF31A53B9114F41E48A /* TestTablePresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE82F04BC46BC069E779C3 /* TestTablePresenterTests.m */; };
+		9C36149E7B6C8734AC46B42B /* TestTableRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB070F9DB1B915A8625C465 /* TestTableRouter.m */; };
+		C29C7EDF9FD726A593E9609F /* TestTablePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 163CF6499C27018087B58FCA /* TestTablePresenter.m */; };
+		D80F0062956BA65D2A3AFFD6 /* Pods_ViperPlusTableIGListKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B7AB6790F5211650E853AD /* Pods_ViperPlusTableIGListKitTests.framework */; };
+		E5727D7231635C5D3327044A /* TestTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B61CBF46D805535624F376 /* TestTableViewControllerTests.m */; };
+		EB09EE201EAC58F300D888E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE1F1EAC58F300D888E3 /* main.m */; };
+		EB09EE231EAC58F300D888E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE221EAC58F300D888E3 /* AppDelegate.m */; };
+		EB09EE291EAC58F400D888E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB09EE271EAC58F400D888E3 /* Main.storyboard */; };
+		EB09EE2B1EAC58F400D888E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB09EE2A1EAC58F400D888E3 /* Assets.xcassets */; };
+		EB09EE2E1EAC58F400D888E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB09EE2C1EAC58F400D888E3 /* LaunchScreen.storyboard */; };
+		EB09EE391EAC58F400D888E3 /* ViperPlusTableIGListKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE381EAC58F400D888E3 /* ViperPlusTableIGListKitTests.m */; };
+		EB09EE441EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE431EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.m */; };
+		EB09EE561EAC5B8800D888E3 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE551EAC5B8800D888E3 /* ApplicationAssembly.m */; };
+		EB09EE601EAC6C0200D888E3 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE5F1EAC6C0200D888E3 /* TableCell.m */; };
+		EB09EE641EAC779000D888E3 /* TableRowSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE631EAC779000D888E3 /* TableRowSectionModel.m */; };
+		EB09EE681EAC77A000D888E3 /* TableRowSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE671EAC77A000D888E3 /* TableRowSectionController.m */; };
+		F87DE4E5C51981F30C52E5EB /* TestTableAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A415B96C420502DE424FA84 /* TestTableAssembly.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB09EE351EAC58F400D888E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB09EE131EAC58F300D888E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB09EE1A1EAC58F300D888E3;
+			remoteInfo = ViperPlusTableIGListKit;
+		};
+		EB09EE401EAC58F400D888E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB09EE131EAC58F300D888E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB09EE1A1EAC58F300D888E3;
+			remoteInfo = ViperPlusTableIGListKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0156E9E2EEF29423CE2D5A9F /* TestTablePresenter_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTablePresenter_Testable.h; sourceTree = "<group>"; };
+		0A23992F884C127C35C7CCEB /* TestTableRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableRouterTests.m; sourceTree = "<group>"; };
+		0FBA8FC2FFDC7952C45FAC86 /* TestTableInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableInteractor.m; sourceTree = "<group>"; };
+		0FFA48773D21E16A8EDE1DC8 /* Pods-ViperPlusTableIGListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperPlusTableIGListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperPlusTableIGListKit/Pods-ViperPlusTableIGListKit.release.xcconfig"; sourceTree = "<group>"; };
+		14D44C032355843775CC0ACB /* TestTableRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableRouterInput.h; sourceTree = "<group>"; };
+		163CF6499C27018087B58FCA /* TestTablePresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTablePresenter.m; sourceTree = "<group>"; };
+		21F91131C0D2F9B499693C4B /* TestTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		22BA3D5D662BFBC42F31A262 /* TestTableInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableInteractor.h; sourceTree = "<group>"; };
+		2715435D41F8ED2106808A8E /* TestTableInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableInteractorTests.m; sourceTree = "<group>"; };
+		2885D4E486CC1629A30239E0 /* TestTableAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableAssemblyTests.m; sourceTree = "<group>"; };
+		29B5874EFC6691C406701E5D /* TestTableInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableInteractorOutput.h; sourceTree = "<group>"; };
+		49D5195E4D0CC24D1F4A958D /* TestTableInteractor_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableInteractor_Testable.h; sourceTree = "<group>"; };
+		5703A4F0529CAE31D03C538C /* TestTableViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableViewOutput.h; sourceTree = "<group>"; };
+		5A2E0D15635C1DF53CE0EEB9 /* Pods-ViperPlusTableIGListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperPlusTableIGListKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperPlusTableIGListKit/Pods-ViperPlusTableIGListKit.debug.xcconfig"; sourceTree = "<group>"; };
+		63716B0B8422EDFB9A0E062A /* Pods_ViperPlusTableIGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperPlusTableIGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A415B96C420502DE424FA84 /* TestTableAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableAssembly.m; sourceTree = "<group>"; };
+		6D90E0B7AC945131DF21E540 /* TestTablePresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTablePresenter.h; sourceTree = "<group>"; };
+		70B61CBF46D805535624F376 /* TestTableViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableViewControllerTests.m; sourceTree = "<group>"; };
+		73B7AB6790F5211650E853AD /* Pods_ViperPlusTableIGListKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperPlusTableIGListKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74604DDE3364EC74DD2CC10B /* Pods-ViperPlusTableIGListKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperPlusTableIGListKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperPlusTableIGListKitTests/Pods-ViperPlusTableIGListKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		7ECE82F04BC46BC069E779C3 /* TestTablePresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTablePresenterTests.m; sourceTree = "<group>"; };
+		8E6FA24C945AAF29A86C4FDD /* TestTableAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableAssembly.h; sourceTree = "<group>"; };
+		A1DB6A7EB797E14DB0DA7284 /* TestTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		B7968A05D2BE80A37EFEB3F3 /* TestTableModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableModuleInput.h; sourceTree = "<group>"; };
+		C9547053F4177198F3951843 /* TestTableViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableViewInput.h; sourceTree = "<group>"; };
+		D26B985322F48077F5FD266F /* TestTableInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableInteractorInput.h; sourceTree = "<group>"; };
+		D38E2375DD271A143201F8F1 /* TestTableViewController_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableViewController_Testable.h; sourceTree = "<group>"; };
+		DAB070F9DB1B915A8625C465 /* TestTableRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestTableRouter.m; sourceTree = "<group>"; };
+		DF00D85124166245AC2E93D6 /* Pods-ViperPlusTableIGListKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperPlusTableIGListKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperPlusTableIGListKitTests/Pods-ViperPlusTableIGListKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB09EE1B1EAC58F300D888E3 /* ViperPlusTableIGListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperPlusTableIGListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB09EE1F1EAC58F300D888E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB09EE211EAC58F300D888E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB09EE221EAC58F300D888E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB09EE281EAC58F400D888E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB09EE2A1EAC58F400D888E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB09EE2D1EAC58F400D888E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB09EE2F1EAC58F400D888E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB09EE341EAC58F400D888E3 /* ViperPlusTableIGListKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperPlusTableIGListKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB09EE381EAC58F400D888E3 /* ViperPlusTableIGListKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViperPlusTableIGListKitTests.m; sourceTree = "<group>"; };
+		EB09EE3A1EAC58F400D888E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB09EE3F1EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperPlusTableIGListKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB09EE431EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViperPlusTableIGListKitUITests.m; sourceTree = "<group>"; };
+		EB09EE451EAC58F400D888E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB09EE541EAC5B8800D888E3 /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
+		EB09EE551EAC5B8800D888E3 /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
+		EB09EE5E1EAC6C0200D888E3 /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
+		EB09EE5F1EAC6C0200D888E3 /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
+		EB09EE621EAC779000D888E3 /* TableRowSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowSectionModel.h; sourceTree = "<group>"; };
+		EB09EE631EAC779000D888E3 /* TableRowSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowSectionModel.m; sourceTree = "<group>"; };
+		EB09EE661EAC77A000D888E3 /* TableRowSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowSectionController.h; sourceTree = "<group>"; };
+		EB09EE671EAC77A000D888E3 /* TableRowSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowSectionController.m; sourceTree = "<group>"; };
+		EBE0B68B2E6163F4698495BA /* TestTableAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableAssembly_Testable.h; sourceTree = "<group>"; };
+		EC7D0C6BE54FF347F67ABED8 /* TestTableRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableRouter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB09EE181EAC58F300D888E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98348E3E71C107CB56F71768 /* Pods_ViperPlusTableIGListKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB09EE311EAC58F400D888E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80F0062956BA65D2A3AFFD6 /* Pods_ViperPlusTableIGListKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB09EE3C1EAC58F400D888E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0380D2B4143266D91E8D711E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70B61CBF46D805535624F376 /* TestTableViewControllerTests.m */,
+				D38E2375DD271A143201F8F1 /* TestTableViewController_Testable.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A0A5DB8840863B2D715F6CD /* TestTable */ = {
+			isa = PBXGroup;
+			children = (
+				F3B546C50D982A19C47B50CA /* Assembly */,
+				D8AFA8DCF775E59D73A29419 /* View */,
+				AB01F13E67C4CA753AB0700E /* Presenter */,
+				5209B8D039C412748B00119D /* Interactor */,
+				41800A8913DDB6AC137954A9 /* Router */,
+			);
+			path = TestTable;
+			sourceTree = "<group>";
+		};
+		1F586D9A39BDD2EDFF4E231B /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				0A0A5DB8840863B2D715F6CD /* TestTable */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		2083E51AC42192F61FAA7B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63716B0B8422EDFB9A0E062A /* Pods_ViperPlusTableIGListKit.framework */,
+				73B7AB6790F5211650E853AD /* Pods_ViperPlusTableIGListKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41800A8913DDB6AC137954A9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				14D44C032355843775CC0ACB /* TestTableRouterInput.h */,
+				EC7D0C6BE54FF347F67ABED8 /* TestTableRouter.h */,
+				DAB070F9DB1B915A8625C465 /* TestTableRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5209B8D039C412748B00119D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE611EAC779000D888E3 /* models */,
+				D26B985322F48077F5FD266F /* TestTableInteractorInput.h */,
+				29B5874EFC6691C406701E5D /* TestTableInteractorOutput.h */,
+				22BA3D5D662BFBC42F31A262 /* TestTableInteractor.h */,
+				0FBA8FC2FFDC7952C45FAC86 /* TestTableInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5D85B20C66F5D76955BEF707 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0A23992F884C127C35C7CCEB /* TestTableRouterTests.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		820197892193B5B0B253123D /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C0333677AFF6A65D41BAAEA7 /* TestTable */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		9BF9168741AF725816ADF6B1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2885D4E486CC1629A30239E0 /* TestTableAssemblyTests.m */,
+				EBE0B68B2E6163F4698495BA /* TestTableAssembly_Testable.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		AB01F13E67C4CA753AB0700E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE651EAC77A000D888E3 /* SectionControllers */,
+				B7968A05D2BE80A37EFEB3F3 /* TestTableModuleInput.h */,
+				6D90E0B7AC945131DF21E540 /* TestTablePresenter.h */,
+				163CF6499C27018087B58FCA /* TestTablePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B095E9E3EB563F932B98040B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2715435D41F8ED2106808A8E /* TestTableInteractorTests.m */,
+				49D5195E4D0CC24D1F4A958D /* TestTableInteractor_Testable.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C0333677AFF6A65D41BAAEA7 /* TestTable */ = {
+			isa = PBXGroup;
+			children = (
+				9BF9168741AF725816ADF6B1 /* Assembly */,
+				0380D2B4143266D91E8D711E /* View */,
+				F65FD902C5D353AA6D242BBF /* Presenter */,
+				B095E9E3EB563F932B98040B /* Interactor */,
+				5D85B20C66F5D76955BEF707 /* Router */,
+			);
+			name = TestTable;
+			path = CViperPlusTableIGListKitTests/modules/TestTable;
+			sourceTree = SOURCE_ROOT;
+		};
+		D8AFA8DCF775E59D73A29419 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE5D1EAC6BE800D888E3 /* Cells */,
+				C9547053F4177198F3951843 /* TestTableViewInput.h */,
+				5703A4F0529CAE31D03C538C /* TestTableViewOutput.h */,
+				A1DB6A7EB797E14DB0DA7284 /* TestTableViewController.h */,
+				21F91131C0D2F9B499693C4B /* TestTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB09EE121EAC58F300D888E3 = {
+			isa = PBXGroup;
+			children = (
+				EB09EE1D1EAC58F300D888E3 /* ViperPlusTableIGListKit */,
+				EB09EE371EAC58F400D888E3 /* ViperPlusTableIGListKitTests */,
+				EB09EE421EAC58F400D888E3 /* ViperPlusTableIGListKitUITests */,
+				EB09EE1C1EAC58F300D888E3 /* Products */,
+				F442379387ACC0E4746471CE /* Pods */,
+				2083E51AC42192F61FAA7B5A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB09EE1C1EAC58F300D888E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE1B1EAC58F300D888E3 /* ViperPlusTableIGListKit.app */,
+				EB09EE341EAC58F400D888E3 /* ViperPlusTableIGListKitTests.xctest */,
+				EB09EE3F1EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB09EE1D1EAC58F300D888E3 /* ViperPlusTableIGListKit */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE211EAC58F300D888E3 /* AppDelegate.h */,
+				EB09EE221EAC58F300D888E3 /* AppDelegate.m */,
+				EB09EE541EAC5B8800D888E3 /* ApplicationAssembly.h */,
+				EB09EE551EAC5B8800D888E3 /* ApplicationAssembly.m */,
+				EB09EE271EAC58F400D888E3 /* Main.storyboard */,
+				EB09EE2A1EAC58F400D888E3 /* Assets.xcassets */,
+				EB09EE2C1EAC58F400D888E3 /* LaunchScreen.storyboard */,
+				EB09EE2F1EAC58F400D888E3 /* Info.plist */,
+				EB09EE1E1EAC58F300D888E3 /* Supporting Files */,
+				1F586D9A39BDD2EDFF4E231B /* modules */,
+			);
+			path = ViperPlusTableIGListKit;
+			sourceTree = "<group>";
+		};
+		EB09EE1E1EAC58F300D888E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE1F1EAC58F300D888E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB09EE371EAC58F400D888E3 /* ViperPlusTableIGListKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE381EAC58F400D888E3 /* ViperPlusTableIGListKitTests.m */,
+				EB09EE3A1EAC58F400D888E3 /* Info.plist */,
+				820197892193B5B0B253123D /* modules */,
+			);
+			path = ViperPlusTableIGListKitTests;
+			sourceTree = "<group>";
+		};
+		EB09EE421EAC58F400D888E3 /* ViperPlusTableIGListKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE431EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.m */,
+				EB09EE451EAC58F400D888E3 /* Info.plist */,
+			);
+			path = ViperPlusTableIGListKitUITests;
+			sourceTree = "<group>";
+		};
+		EB09EE5D1EAC6BE800D888E3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE5E1EAC6C0200D888E3 /* TableCell.h */,
+				EB09EE5F1EAC6C0200D888E3 /* TableCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EB09EE611EAC779000D888E3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE621EAC779000D888E3 /* TableRowSectionModel.h */,
+				EB09EE631EAC779000D888E3 /* TableRowSectionModel.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		EB09EE651EAC77A000D888E3 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB09EE661EAC77A000D888E3 /* TableRowSectionController.h */,
+				EB09EE671EAC77A000D888E3 /* TableRowSectionController.m */,
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		F3B546C50D982A19C47B50CA /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8E6FA24C945AAF29A86C4FDD /* TestTableAssembly.h */,
+				6A415B96C420502DE424FA84 /* TestTableAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F442379387ACC0E4746471CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A2E0D15635C1DF53CE0EEB9 /* Pods-ViperPlusTableIGListKit.debug.xcconfig */,
+				0FFA48773D21E16A8EDE1DC8 /* Pods-ViperPlusTableIGListKit.release.xcconfig */,
+				DF00D85124166245AC2E93D6 /* Pods-ViperPlusTableIGListKitTests.debug.xcconfig */,
+				74604DDE3364EC74DD2CC10B /* Pods-ViperPlusTableIGListKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F65FD902C5D353AA6D242BBF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7ECE82F04BC46BC069E779C3 /* TestTablePresenterTests.m */,
+				0156E9E2EEF29423CE2D5A9F /* TestTablePresenter_Testable.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB09EE1A1EAC58F300D888E3 /* ViperPlusTableIGListKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB09EE481EAC58F400D888E3 /* Build configuration list for PBXNativeTarget "ViperPlusTableIGListKit" */;
+			buildPhases = (
+				69A2447CFBC4155CAE8D28B1 /* [CP] Check Pods Manifest.lock */,
+				EB09EE171EAC58F300D888E3 /* Sources */,
+				EB09EE181EAC58F300D888E3 /* Frameworks */,
+				EB09EE191EAC58F300D888E3 /* Resources */,
+				DCF2CC95C370E6E56A8C3997 /* [CP] Embed Pods Frameworks */,
+				EC0A2676DE4AE641443DE8F7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViperPlusTableIGListKit;
+			productName = ViperPlusTableIGListKit;
+			productReference = EB09EE1B1EAC58F300D888E3 /* ViperPlusTableIGListKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB09EE331EAC58F400D888E3 /* ViperPlusTableIGListKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB09EE4B1EAC58F400D888E3 /* Build configuration list for PBXNativeTarget "ViperPlusTableIGListKitTests" */;
+			buildPhases = (
+				3F4D9EF8757F273252ACA193 /* [CP] Check Pods Manifest.lock */,
+				EB09EE301EAC58F400D888E3 /* Sources */,
+				EB09EE311EAC58F400D888E3 /* Frameworks */,
+				EB09EE321EAC58F400D888E3 /* Resources */,
+				63C0CEEEBB488DCE0D0CBEBF /* [CP] Embed Pods Frameworks */,
+				208BAECDB780C4E0C209F424 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB09EE361EAC58F400D888E3 /* PBXTargetDependency */,
+			);
+			name = ViperPlusTableIGListKitTests;
+			productName = ViperPlusTableIGListKitTests;
+			productReference = EB09EE341EAC58F400D888E3 /* ViperPlusTableIGListKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB09EE3E1EAC58F400D888E3 /* ViperPlusTableIGListKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB09EE4E1EAC58F400D888E3 /* Build configuration list for PBXNativeTarget "ViperPlusTableIGListKitUITests" */;
+			buildPhases = (
+				EB09EE3B1EAC58F400D888E3 /* Sources */,
+				EB09EE3C1EAC58F400D888E3 /* Frameworks */,
+				EB09EE3D1EAC58F400D888E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB09EE411EAC58F400D888E3 /* PBXTargetDependency */,
+			);
+			name = ViperPlusTableIGListKitUITests;
+			productName = ViperPlusTableIGListKitUITests;
+			productReference = EB09EE3F1EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB09EE131EAC58F300D888E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MadMag;
+				TargetAttributes = {
+					EB09EE1A1EAC58F300D888E3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = STZB53GU8R;
+						ProvisioningStyle = Automatic;
+					};
+					EB09EE331EAC58F400D888E3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = STZB53GU8R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB09EE1A1EAC58F300D888E3;
+					};
+					EB09EE3E1EAC58F400D888E3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = STZB53GU8R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB09EE1A1EAC58F300D888E3;
+					};
+				};
+			};
+			buildConfigurationList = EB09EE161EAC58F300D888E3 /* Build configuration list for PBXProject "ViperPlusTableIGListKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB09EE121EAC58F300D888E3;
+			productRefGroup = EB09EE1C1EAC58F300D888E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB09EE1A1EAC58F300D888E3 /* ViperPlusTableIGListKit */,
+				EB09EE331EAC58F400D888E3 /* ViperPlusTableIGListKitTests */,
+				EB09EE3E1EAC58F400D888E3 /* ViperPlusTableIGListKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB09EE191EAC58F300D888E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB09EE2E1EAC58F400D888E3 /* LaunchScreen.storyboard in Resources */,
+				EB09EE2B1EAC58F400D888E3 /* Assets.xcassets in Resources */,
+				EB09EE291EAC58F400D888E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB09EE321EAC58F400D888E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB09EE3D1EAC58F400D888E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		208BAECDB780C4E0C209F424 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperPlusTableIGListKitTests/Pods-ViperPlusTableIGListKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F4D9EF8757F273252ACA193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63C0CEEEBB488DCE0D0CBEBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperPlusTableIGListKitTests/Pods-ViperPlusTableIGListKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69A2447CFBC4155CAE8D28B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF2CC95C370E6E56A8C3997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperPlusTableIGListKit/Pods-ViperPlusTableIGListKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0A2676DE4AE641443DE8F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperPlusTableIGListKit/Pods-ViperPlusTableIGListKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB09EE171EAC58F300D888E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB09EE231EAC58F300D888E3 /* AppDelegate.m in Sources */,
+				EB09EE641EAC779000D888E3 /* TableRowSectionModel.m in Sources */,
+				EB09EE681EAC77A000D888E3 /* TableRowSectionController.m in Sources */,
+				EB09EE201EAC58F300D888E3 /* main.m in Sources */,
+				EB09EE601EAC6C0200D888E3 /* TableCell.m in Sources */,
+				F87DE4E5C51981F30C52E5EB /* TestTableAssembly.m in Sources */,
+				2F427E125AEC30FAEE0208FC /* TestTableViewController.m in Sources */,
+				EB09EE561EAC5B8800D888E3 /* ApplicationAssembly.m in Sources */,
+				C29C7EDF9FD726A593E9609F /* TestTablePresenter.m in Sources */,
+				7EDAE0803F5637CF177D332F /* TestTableInteractor.m in Sources */,
+				9C36149E7B6C8734AC46B42B /* TestTableRouter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB09EE301EAC58F400D888E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB09EE391EAC58F400D888E3 /* ViperPlusTableIGListKitTests.m in Sources */,
+				9749F6F66A08CCFA64488029 /* TestTableAssemblyTests.m in Sources */,
+				E5727D7231635C5D3327044A /* TestTableViewControllerTests.m in Sources */,
+				9BBCEDF31A53B9114F41E48A /* TestTablePresenterTests.m in Sources */,
+				12B44C4FDC578FF3B7DF281E /* TestTableInteractorTests.m in Sources */,
+				48BF76898DB073610709BBE6 /* TestTableRouterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB09EE3B1EAC58F400D888E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB09EE441EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB09EE361EAC58F400D888E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB09EE1A1EAC58F300D888E3 /* ViperPlusTableIGListKit */;
+			targetProxy = EB09EE351EAC58F400D888E3 /* PBXContainerItemProxy */;
+		};
+		EB09EE411EAC58F400D888E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB09EE1A1EAC58F300D888E3 /* ViperPlusTableIGListKit */;
+			targetProxy = EB09EE401EAC58F400D888E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB09EE271EAC58F400D888E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB09EE281EAC58F400D888E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB09EE2C1EAC58F400D888E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB09EE2D1EAC58F400D888E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB09EE461EAC58F400D888E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB09EE471EAC58F400D888E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB09EE491EAC58F400D888E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2E0D15635C1DF53CE0EEB9 /* Pods-ViperPlusTableIGListKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = ViperPlusTableIGListKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MadMag.ViperPlusTableIGListKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB09EE4A1EAC58F400D888E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFA48773D21E16A8EDE1DC8 /* Pods-ViperPlusTableIGListKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = ViperPlusTableIGListKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MadMag.ViperPlusTableIGListKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB09EE4C1EAC58F400D888E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF00D85124166245AC2E93D6 /* Pods-ViperPlusTableIGListKitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = ViperPlusTableIGListKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MadMag.ViperPlusTableIGListKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperPlusTableIGListKit.app/ViperPlusTableIGListKit";
+			};
+			name = Debug;
+		};
+		EB09EE4D1EAC58F400D888E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74604DDE3364EC74DD2CC10B /* Pods-ViperPlusTableIGListKitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = ViperPlusTableIGListKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MadMag.ViperPlusTableIGListKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperPlusTableIGListKit.app/ViperPlusTableIGListKit";
+			};
+			name = Release;
+		};
+		EB09EE4F1EAC58F400D888E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = ViperPlusTableIGListKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MadMag.ViperPlusTableIGListKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ViperPlusTableIGListKit;
+			};
+			name = Debug;
+		};
+		EB09EE501EAC58F400D888E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = STZB53GU8R;
+				INFOPLIST_FILE = ViperPlusTableIGListKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MadMag.ViperPlusTableIGListKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ViperPlusTableIGListKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB09EE161EAC58F300D888E3 /* Build configuration list for PBXProject "ViperPlusTableIGListKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB09EE461EAC58F400D888E3 /* Debug */,
+				EB09EE471EAC58F400D888E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB09EE481EAC58F400D888E3 /* Build configuration list for PBXNativeTarget "ViperPlusTableIGListKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB09EE491EAC58F400D888E3 /* Debug */,
+				EB09EE4A1EAC58F400D888E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB09EE4B1EAC58F400D888E3 /* Build configuration list for PBXNativeTarget "ViperPlusTableIGListKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB09EE4C1EAC58F400D888E3 /* Debug */,
+				EB09EE4D1EAC58F400D888E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB09EE4E1EAC58F400D888E3 /* Build configuration list for PBXNativeTarget "ViperPlusTableIGListKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB09EE4F1EAC58F400D888E3 /* Debug */,
+				EB09EE501EAC58F400D888E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB09EE131EAC58F300D888E3 /* Project object */;
+}

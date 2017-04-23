@@ -1,0 +1,32 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}Presenter.h"
+#import "{{ prefix }}{{ module_info.name }}ViewInput.h"
+#import "{{ prefix }}{{ module_info.name }}InteractorInput.h"
+#import "{{ prefix }}{{ module_info.name }}RouterInput.h"
+#
+@implementation {{ prefix }}{{ module_info.name }}Presenter
+
+#pragma mark - Methods {{ prefix }}{{ module_info.name }}ModuleInput
+
+- (void)configureModule {
+   
+}
+
+#pragma mark - Methods {{ prefix }}{{ module_info.name }}ViewOutput
+
+- (void) viewWillApear {
+}
+
+- (void)didTriggerViewReadyEvent {
+	[self.view setupInitialState];
+}
+
+- (void)backBtnTap {
+    [self.router goBack];
+}
+
+#pragma mark - Methods {{ prefix }}{{ module_info.name }}InteractorOutput
+
+
+@end

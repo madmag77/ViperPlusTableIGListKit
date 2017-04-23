@@ -1,0 +1,46 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}ViewController.h"
+#import "{{ prefix }}{{ module_info.name }}ViewOutput.h"
+#import "Masonry.h"
+
+@implementation {{ prefix }}{{ module_info.name }}ViewController
+
+#pragma mark - Life cycle
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+
+	[self.output didTriggerViewReadyEvent];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.output viewWillApear];   
+}
+
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+}
+
+#pragma mark - UI Elements triggers
+-(void)backBtnTap {
+    [self.output backBtnTap];
+}
+
+#pragma mark - Misc functions
+- (void) createViewElements {
+    
+
+}
+
+#pragma mark - Methods {{ prefix }}{{ module_info.name }}ViewInput
+
+- (void)setupInitialState {
+    [self createViewElements];
+}
+
+
+
+@end
