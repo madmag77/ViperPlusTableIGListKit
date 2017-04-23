@@ -11,11 +11,8 @@ use_frameworks!
 	  target "ViperPlusTableIGListKitTests" do
 	  	inherit! :search_paths
 	 	pod 'OCMock', '~> 3.1'
-		pod 'MMBarricade', '~> 1.0.1'
         pod 'RamblerTyphoonUtils/AssemblyTesting'
         pod 'Typhoon'
-        pod 'Specta'
-        pod 'Expecta'
 	  end
 	end
 
