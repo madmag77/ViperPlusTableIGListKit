@@ -7,7 +7,6 @@
 //
 
 #import "TableRowHeaderSectionController.h"
-#import "TableRowSectionModel.h"
 #import "TableHeaderCell.h"
 
 @interface TableRowHeaderSectionController ()
@@ -35,7 +34,7 @@
     
     TableHeaderCell *cell = [self.collectionContext dequeueReusableCellOfClass:[TableHeaderCell class] forSectionController:self atIndex:index];
     
-    [cell bindToModel:self.model.headers[index]];
+    [cell bindToModel:self.model.headers[index].label andSelected:self.model.headers[index].selected];
     return cell;
 }
 
@@ -44,7 +43,11 @@
 }
 
 - (void)didSelectItemAtIndex:(NSInteger)index {
-    
+    if (!self.model || !self.model.headers || index >= self.model.headers.count) return;
+
+    if (self.delegate) {
+        [self.delegate didTapOnObject:self.model andIndexInRow:index];
+    }
 }
 
 @end

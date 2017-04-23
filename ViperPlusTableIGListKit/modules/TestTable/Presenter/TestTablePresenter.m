@@ -15,7 +15,7 @@
 #import "TableRowHeaderSectionController.h"
 #import "TableRowSectionModel.h"
 
-@interface TestTablePresenter() <IGListAdapterDataSource>
+@interface TestTablePresenter() <IGListAdapterDataSource, TableRowHeaderSectionDelegate>
 
 @end
 
@@ -45,7 +45,11 @@
 
 - (IGListSectionController <IGListSectionType> *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
     if ([object isKindOfClass:[TableRowSectionModel class]]) return [TableRowSectionController new];
-    if ([object isKindOfClass:[TableRowHeaderSectionModel class]]) return [TableRowHeaderSectionController new];
+    if ([object isKindOfClass:[TableRowHeaderSectionModel class]]) {
+        TableRowHeaderSectionController *headerSection = [TableRowHeaderSectionController new];
+        headerSection.delegate = self;
+        return headerSection;
+    }
     NSAssert(false, @"Unknown object of class %@", [object class]);
     return nil;
 }
@@ -54,18 +58,21 @@
     return nil;
 }
 
+#pragma mark - Methods TableRowHeaderSectionDelegate
+- (void)didTapOnObject:(TableRowHeaderSectionModel *)object andIndexInRow:(NSUInteger)rowIndex {
+    object.headers[rowIndex].selected = !object.headers[rowIndex].selected;
+    [self.adapter reloadObjects:@[object]];
+}
 
 #pragma mark - Methods TestTableModuleInput
-
 - (void)configureModule {
   
 }
 
 #pragma mark - Methods TestTableViewOutput
-
 - (void) viewWillApear {
     [self.interactor refreshData];
-    [self.adapter performUpdatesAnimated:YES completion:nil];
+    [self.adapter performUpdatesAnimated:NO completion:nil];
 }
 
 - (void)didTriggerViewReadyEvent {

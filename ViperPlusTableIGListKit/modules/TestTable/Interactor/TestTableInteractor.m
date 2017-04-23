@@ -20,7 +20,11 @@
 #pragma mark - Methods TestTableInteractorInput
 
 - (NSArray<id<IGListDiffable>> *)getAllTheData {
-    NSMutableArray<TableRowSectionModel *> *sortedData = [@[[[TableRowHeaderSectionModel alloc]  initWithRowHeight:50.0 andHeaders:@[@"First", @"Second", @"Third", @"Fours"]]] mutableCopy];
+    NSMutableArray<TableRowSectionModel *> *sortedData = [@[[[TableRowHeaderSectionModel alloc]  initWithRowHeight:50.0 andHeaders: @[
+                            [[TableCellModel alloc] initWithLabel: @"4-1"],
+                            [[TableCellModel alloc] initWithLabel: @"4-2"],
+                            [[TableCellModel alloc] initWithLabel: @"4-3"],
+                            [[TableCellModel alloc] initWithLabel: @"4-4"]]]] mutableCopy];
     [sortedData addObjectsFromArray:[self.data sortedArrayUsingComparator:^NSComparisonResult(TableRowSectionModel *obj1, TableRowSectionModel *obj2) {
         if (obj1.index < obj2.index) return NSOrderedAscending;
         if (obj1.index > obj2.index) return NSOrderedDescending;
@@ -39,4 +43,6 @@
                   [[TableRowSectionModel alloc] initWithIndex:3 andData:@[@"3-1", @"3-2", @"3-3"]],
                   ];
 }
+
+
 @end

@@ -40,7 +40,8 @@
     self.label.text = @"";
 }
 
-- (void)bindToModel:(NSString *)labelText {
+- (void)bindToModel:(NSString *)labelText andSelected:(bool)selected {
+    self.contentView.backgroundColor = selected ? UIColor.orangeColor : UIColor.lightGrayColor;
     self.label.text = labelText;
 }
 

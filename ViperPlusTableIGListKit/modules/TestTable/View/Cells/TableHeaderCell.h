@@ -12,6 +12,6 @@
 @interface TableHeaderCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
-- (void)bindToModel:(NSString *)labelText;
+- (void)bindToModel:(NSString *)labelText andSelected:(bool)selected;
 
 @end

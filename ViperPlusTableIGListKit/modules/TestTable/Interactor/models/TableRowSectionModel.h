@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <IGListKit/IGListKit.h>
 
+@interface TableCellModel : NSObject
+@property bool selected;
+@property NSString *label;
+- (id)initWithLabel:(NSString *)label;
+
+@end
+
 @interface TableRowSectionModel : NSObject <IGListDiffable>
 @property NSArray<NSString *> *cells;
 @property NSUInteger index;
@@ -18,7 +25,8 @@
 @end
 
 @interface TableRowHeaderSectionModel : NSObject <IGListDiffable>
-@property NSArray<NSString *> *headers;
+@property NSArray<TableCellModel *> *headers;
 @property CGSize cellSize;
-- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<NSString *> *)headers;
+
+- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<TableCellModel *> *)headers;
 @end

@@ -10,6 +10,18 @@
 
 const CGSize DefaultCellSize = {100, 100};
 
+@implementation TableCellModel
+- (id)initWithLabel:(NSString *)label {
+    self = [super init];
+    if (self) {
+        self.label = label;
+        self.selected = false;
+    }
+    return self;
+}
+
+@end
+
 @implementation TableRowSectionModel
 - (id)init {
     NSAssert(false, @"Use initWithIndex instead");
@@ -43,7 +55,7 @@ const CGSize DefaultCellSize = {100, 100};
     return nil;
 }
 
-- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<NSString *> *)headers {
+- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<TableCellModel *> *)headers {
     self = [super init];
     if (self) {
         self.headers = headers;

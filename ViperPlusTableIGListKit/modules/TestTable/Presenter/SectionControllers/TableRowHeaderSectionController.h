@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <IGListKit/IGListKit.h>
+#import "TableRowSectionModel.h"
+
+@protocol TableRowHeaderSectionDelegate
+- (void)didTapOnObject:(TableRowHeaderSectionModel *)object andIndexInRow:(NSUInteger)rowIndex;
+
+@end
 
 @interface TableRowHeaderSectionController : IGListSectionController <IGListSectionType>
-
+@property (weak, nonatomic) id<TableRowHeaderSectionDelegate> delegate;
 @end
