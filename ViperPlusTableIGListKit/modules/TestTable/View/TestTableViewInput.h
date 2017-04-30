@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@protocol CoolTableDataSourceProtocol;
 
 @protocol TestTableViewInput <NSObject>
 
 - (void)setupInitialState;
-
+- (id<CoolTableDataSourceProtocol>)getDataSource;
 @end

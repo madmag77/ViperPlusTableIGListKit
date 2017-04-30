@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class IGListAdapter;
+
 
 @protocol TestTableViewOutput <NSObject>
 
@@ -15,5 +15,5 @@
 - (void)backBtnTap;
 - (void)viewWillApear;
 
-@property (weak, nonatomic) IGListAdapter *adapter;
+
 @end

@@ -10,6 +10,5 @@
 @protocol IGListDiffable;
 
 @protocol TestTableInteractorInput <NSObject>
-- (NSArray<id <IGListDiffable>> *)getAllTheData;
 - (void)refreshData;
 @end

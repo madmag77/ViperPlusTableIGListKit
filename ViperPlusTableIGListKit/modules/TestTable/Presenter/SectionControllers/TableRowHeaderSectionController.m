@@ -45,9 +45,7 @@
 - (void)didSelectItemAtIndex:(NSInteger)index {
     if (!self.model || !self.model.headers || index >= self.model.headers.count) return;
 
-    if (self.delegate) {
-        [self.delegate didTapOnObject:self.model andIndexInRow:index];
-    }
+    [self.model didTapOnItemAtIndex:index];
 }
 
 @end

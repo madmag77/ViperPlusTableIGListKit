@@ -27,11 +27,13 @@
 		EB09EE441EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE431EAC58F400D888E3 /* ViperPlusTableIGListKitUITests.m */; };
 		EB09EE561EAC5B8800D888E3 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE551EAC5B8800D888E3 /* ApplicationAssembly.m */; };
 		EB09EE601EAC6C0200D888E3 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE5F1EAC6C0200D888E3 /* TableCell.m */; };
-		EB09EE641EAC779000D888E3 /* TableRowSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE631EAC779000D888E3 /* TableRowSectionModel.m */; };
 		EB09EE681EAC77A000D888E3 /* TableRowSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE671EAC77A000D888E3 /* TableRowSectionController.m */; };
 		EB09EE6B1EACC39500D888E3 /* TableRowHeaderSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE6A1EACC39500D888E3 /* TableRowHeaderSectionController.m */; };
 		EB09EE6E1EACC3DE00D888E3 /* TableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE6D1EACC3DE00D888E3 /* TableHeaderCell.m */; };
-		EBB32A991EB5A05500C5C796 /* CoolTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB32A981EB5A05500C5C796 /* CoolTableDataSource.m */; };
+		EBB32A9E1EB5ECE700C5C796 /* DataCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB32A9D1EB5ECE700C5C796 /* DataCellModel.m */; };
+		EBB32AA21EB5ED5A00C5C796 /* TableRowSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB32AA11EB5ED5A00C5C796 /* TableRowSectionModel.m */; };
+		EBB32AA51EB5EE9500C5C796 /* ModelsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB32AA41EB5EE9500C5C796 /* ModelsFactory.m */; };
+		EBB32AA91EB5F53D00C5C796 /* CoolTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB32AA81EB5F53D00C5C796 /* CoolTableDataSource.m */; };
 		F87DE4E5C51981F30C52E5EB /* TestTableAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A415B96C420502DE424FA84 /* TestTableAssembly.m */; };
 /* End PBXBuildFile section */
 
@@ -100,18 +102,23 @@
 		EB09EE551EAC5B8800D888E3 /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
 		EB09EE5E1EAC6C0200D888E3 /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
 		EB09EE5F1EAC6C0200D888E3 /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
-		EB09EE621EAC779000D888E3 /* TableRowSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowSectionModel.h; sourceTree = "<group>"; };
-		EB09EE631EAC779000D888E3 /* TableRowSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowSectionModel.m; sourceTree = "<group>"; };
 		EB09EE661EAC77A000D888E3 /* TableRowSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowSectionController.h; sourceTree = "<group>"; };
 		EB09EE671EAC77A000D888E3 /* TableRowSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowSectionController.m; sourceTree = "<group>"; };
 		EB09EE691EACC39500D888E3 /* TableRowHeaderSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowHeaderSectionController.h; sourceTree = "<group>"; };
 		EB09EE6A1EACC39500D888E3 /* TableRowHeaderSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowHeaderSectionController.m; sourceTree = "<group>"; };
 		EB09EE6C1EACC3DE00D888E3 /* TableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeaderCell.h; sourceTree = "<group>"; };
 		EB09EE6D1EACC3DE00D888E3 /* TableHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeaderCell.m; sourceTree = "<group>"; };
-		EBB32A971EB5A05500C5C796 /* CoolTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableDataSource.h; sourceTree = "<group>"; };
-		EBB32A981EB5A05500C5C796 /* CoolTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableDataSource.m; sourceTree = "<group>"; };
 		EBB32A9A1EB5A34700C5C796 /* CoolTableCellInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolTableCellInput.h; sourceTree = "<group>"; };
 		EBB32A9B1EB5A88000C5C796 /* CoolTableHeaderCellInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolTableHeaderCellInput.h; sourceTree = "<group>"; };
+		EBB32A9C1EB5ECE700C5C796 /* DataCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCellModel.h; sourceTree = "<group>"; };
+		EBB32A9D1EB5ECE700C5C796 /* DataCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCellModel.m; sourceTree = "<group>"; };
+		EBB32AA01EB5ED5A00C5C796 /* TableRowSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowSectionModel.h; sourceTree = "<group>"; };
+		EBB32AA11EB5ED5A00C5C796 /* TableRowSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowSectionModel.m; sourceTree = "<group>"; };
+		EBB32AA31EB5EE9500C5C796 /* ModelsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelsFactory.h; sourceTree = "<group>"; };
+		EBB32AA41EB5EE9500C5C796 /* ModelsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelsFactory.m; sourceTree = "<group>"; };
+		EBB32AA71EB5F53D00C5C796 /* CoolTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableDataSource.h; sourceTree = "<group>"; };
+		EBB32AA81EB5F53D00C5C796 /* CoolTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableDataSource.m; sourceTree = "<group>"; };
+		EBB32AAA1EB5F63700C5C796 /* CoolTableDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolTableDataSourceProtocol.h; sourceTree = "<group>"; };
 		EBE0B68B2E6163F4698495BA /* TestTableAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableAssembly_Testable.h; sourceTree = "<group>"; };
 		EC7D0C6BE54FF347F67ABED8 /* TestTableRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableRouter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,11 +239,11 @@
 			isa = PBXGroup;
 			children = (
 				EB09EE651EAC77A000D888E3 /* SectionControllers */,
+				EBB32A9F1EB5ED5A00C5C796 /* ViewModels */,
+				EBB32AA61EB5F53D00C5C796 /* DataSource */,
 				B7968A05D2BE80A37EFEB3F3 /* TestTableModuleInput.h */,
 				6D90E0B7AC945131DF21E540 /* TestTablePresenter.h */,
 				163CF6499C27018087B58FCA /* TestTablePresenter.m */,
-				EBB32A971EB5A05500C5C796 /* CoolTableDataSource.h */,
-				EBB32A981EB5A05500C5C796 /* CoolTableDataSource.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -357,8 +364,8 @@
 		EB09EE611EAC779000D888E3 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				EB09EE621EAC779000D888E3 /* TableRowSectionModel.h */,
-				EB09EE631EAC779000D888E3 /* TableRowSectionModel.m */,
+				EBB32A9C1EB5ECE700C5C796 /* DataCellModel.h */,
+				EBB32A9D1EB5ECE700C5C796 /* DataCellModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -372,6 +379,27 @@
 				EB09EE6A1EACC39500D888E3 /* TableRowHeaderSectionController.m */,
 			);
 			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		EBB32A9F1EB5ED5A00C5C796 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EBB32AA01EB5ED5A00C5C796 /* TableRowSectionModel.h */,
+				EBB32AA11EB5ED5A00C5C796 /* TableRowSectionModel.m */,
+				EBB32AA31EB5EE9500C5C796 /* ModelsFactory.h */,
+				EBB32AA41EB5EE9500C5C796 /* ModelsFactory.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EBB32AA61EB5F53D00C5C796 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EBB32AA71EB5F53D00C5C796 /* CoolTableDataSource.h */,
+				EBB32AA81EB5F53D00C5C796 /* CoolTableDataSource.m */,
+				EBB32AAA1EB5F63700C5C796 /* CoolTableDataSourceProtocol.h */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		F3B546C50D982A19C47B50CA /* Assembly */ = {
@@ -638,20 +666,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB32AA91EB5F53D00C5C796 /* CoolTableDataSource.m in Sources */,
 				EB09EE6E1EACC3DE00D888E3 /* TableHeaderCell.m in Sources */,
 				EB09EE231EAC58F300D888E3 /* AppDelegate.m in Sources */,
-				EB09EE641EAC779000D888E3 /* TableRowSectionModel.m in Sources */,
 				EB09EE681EAC77A000D888E3 /* TableRowSectionController.m in Sources */,
 				EB09EE201EAC58F300D888E3 /* main.m in Sources */,
 				EB09EE601EAC6C0200D888E3 /* TableCell.m in Sources */,
 				F87DE4E5C51981F30C52E5EB /* TestTableAssembly.m in Sources */,
+				EBB32AA51EB5EE9500C5C796 /* ModelsFactory.m in Sources */,
+				EBB32AA21EB5ED5A00C5C796 /* TableRowSectionModel.m in Sources */,
 				2F427E125AEC30FAEE0208FC /* TestTableViewController.m in Sources */,
-				EBB32A991EB5A05500C5C796 /* CoolTableDataSource.m in Sources */,
 				EB09EE561EAC5B8800D888E3 /* ApplicationAssembly.m in Sources */,
 				C29C7EDF9FD726A593E9609F /* TestTablePresenter.m in Sources */,
 				7EDAE0803F5637CF177D332F /* TestTableInteractor.m in Sources */,
 				EB09EE6B1EACC39500D888E3 /* TableRowHeaderSectionController.m in Sources */,
 				9C36149E7B6C8734AC46B42B /* TestTableRouter.m in Sources */,
+				EBB32A9E1EB5ECE700C5C796 /* DataCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
