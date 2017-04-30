@@ -28,7 +28,7 @@ const CGSize DefaultCellSize = {100, 100};
     return nil;
 }
 
-- (id)initWithIndex:(NSUInteger)index andData:(NSArray<NSString *> *)data {
+- (id)initWithIndex:(NSUInteger)index andData:(NSArray<TableCellModel *> *)data {
     self = [super init];
     if (self) {
         self.index = index;
@@ -36,6 +36,12 @@ const CGSize DefaultCellSize = {100, 100};
         self.cellSize = DefaultCellSize;
     }
     return self;
+}
+
+- (void)setupView:(id<CoolTableCellInput>)cell atIndex:(NSInteger)index {
+    TableCellModel *cellModel = self.cells[index];
+    [cell setCoolText:cellModel.label];
+    [cell setDangerousMode:arc4random_uniform(2) == 1];
 }
 
 - (nonnull id<NSObject>)diffIdentifier {

@@ -8,20 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import <IGListKit/IGListKit.h>
+#import "CoolTableCellInput.h"
 
 @interface TableCellModel : NSObject
 @property bool selected;
 @property NSString *label;
 - (id)initWithLabel:(NSString *)label;
-
 @end
 
 @interface TableRowSectionModel : NSObject <IGListDiffable>
-@property NSArray<NSString *> *cells;
+@property NSArray<TableCellModel *> *cells;
 @property NSUInteger index;
 @property NSString *name;
 @property CGSize cellSize;
-- (id)initWithIndex:(NSUInteger)index andData:(NSArray<NSString *> *)data;
+- (id)initWithIndex:(NSUInteger)index andData:(NSArray<TableCellModel *> *)data;
+- (void)setupView:(id<CoolTableCellInput>)cell atIndex:(NSInteger)index;
 @end
 
 @interface TableRowHeaderSectionModel : NSObject <IGListDiffable>

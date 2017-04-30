@@ -9,6 +9,9 @@
 #import "TableCell.h"
 #import <Masonry/Masonry.h>
 
+#define DangerousColor UIColor.greenColor
+#define NormalColor UIColor.blackColor
+
 @implementation TableCell
 
 - (id)initWithFrame:(CGRect)frame {
@@ -38,8 +41,15 @@
     self.label.text = @"";
 }
 
-- (void)bindToModel:(NSString *)labelText {
-    self.label.text = labelText;
+- (void)setCoolText:(NSString *)text {
+    self.label.text = text;
 }
 
+- (void)setDangerousMode:(bool)dangerous {
+    if (dangerous) {
+        self.label.textColor = DangerousColor;
+    } else {
+        self.label.textColor = NormalColor;
+    }
+}
 @end

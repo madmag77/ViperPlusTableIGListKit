@@ -36,7 +36,7 @@
     
     TableCell *cell = [self.collectionContext dequeueReusableCellOfClass:[TableCell class] forSectionController:self atIndex:index];
 
-    [cell bindToModel:self.model.cells[index]];
+    [self.model setupView:cell atIndex:index];
     return cell;
 }
 

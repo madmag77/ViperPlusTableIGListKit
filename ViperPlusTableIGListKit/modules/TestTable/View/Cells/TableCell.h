@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CoolTableCellInput.h"
 
-@interface TableCell : UICollectionViewCell
+@interface TableCell : UICollectionViewCell <CoolTableCellInput>
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
-- (void)bindToModel:(NSString *)labelText;
 @end
