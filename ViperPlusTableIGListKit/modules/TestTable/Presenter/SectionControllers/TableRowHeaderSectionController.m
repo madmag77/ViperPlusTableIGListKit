@@ -34,7 +34,7 @@
     
     TableHeaderCell *cell = [self.collectionContext dequeueReusableCellOfClass:[TableHeaderCell class] forSectionController:self atIndex:index];
     
-    [cell bindToModel:self.model.headers[index].label andSelected:self.model.headers[index].selected];
+    [self.model setupView:cell atIndex:index];
     return cell;
 }
 

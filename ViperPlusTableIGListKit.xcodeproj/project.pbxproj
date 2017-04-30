@@ -31,6 +31,7 @@
 		EB09EE681EAC77A000D888E3 /* TableRowSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE671EAC77A000D888E3 /* TableRowSectionController.m */; };
 		EB09EE6B1EACC39500D888E3 /* TableRowHeaderSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE6A1EACC39500D888E3 /* TableRowHeaderSectionController.m */; };
 		EB09EE6E1EACC3DE00D888E3 /* TableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09EE6D1EACC3DE00D888E3 /* TableHeaderCell.m */; };
+		EBB32A991EB5A05500C5C796 /* CoolTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB32A981EB5A05500C5C796 /* CoolTableDataSource.m */; };
 		F87DE4E5C51981F30C52E5EB /* TestTableAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A415B96C420502DE424FA84 /* TestTableAssembly.m */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,10 @@
 		EB09EE6A1EACC39500D888E3 /* TableRowHeaderSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowHeaderSectionController.m; sourceTree = "<group>"; };
 		EB09EE6C1EACC3DE00D888E3 /* TableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeaderCell.h; sourceTree = "<group>"; };
 		EB09EE6D1EACC3DE00D888E3 /* TableHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeaderCell.m; sourceTree = "<group>"; };
+		EBB32A971EB5A05500C5C796 /* CoolTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableDataSource.h; sourceTree = "<group>"; };
+		EBB32A981EB5A05500C5C796 /* CoolTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableDataSource.m; sourceTree = "<group>"; };
+		EBB32A9A1EB5A34700C5C796 /* CoolTableCellInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolTableCellInput.h; sourceTree = "<group>"; };
+		EBB32A9B1EB5A88000C5C796 /* CoolTableHeaderCellInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolTableHeaderCellInput.h; sourceTree = "<group>"; };
 		EBE0B68B2E6163F4698495BA /* TestTableAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableAssembly_Testable.h; sourceTree = "<group>"; };
 		EC7D0C6BE54FF347F67ABED8 /* TestTableRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestTableRouter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +235,8 @@
 				B7968A05D2BE80A37EFEB3F3 /* TestTableModuleInput.h */,
 				6D90E0B7AC945131DF21E540 /* TestTablePresenter.h */,
 				163CF6499C27018087B58FCA /* TestTablePresenter.m */,
+				EBB32A971EB5A05500C5C796 /* CoolTableDataSource.h */,
+				EBB32A981EB5A05500C5C796 /* CoolTableDataSource.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -337,6 +344,8 @@
 		EB09EE5D1EAC6BE800D888E3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EBB32A9A1EB5A34700C5C796 /* CoolTableCellInput.h */,
+				EBB32A9B1EB5A88000C5C796 /* CoolTableHeaderCellInput.h */,
 				EB09EE5E1EAC6C0200D888E3 /* TableCell.h */,
 				EB09EE5F1EAC6C0200D888E3 /* TableCell.m */,
 				EB09EE6C1EACC3DE00D888E3 /* TableHeaderCell.h */,
@@ -637,6 +646,7 @@
 				EB09EE601EAC6C0200D888E3 /* TableCell.m in Sources */,
 				F87DE4E5C51981F30C52E5EB /* TestTableAssembly.m in Sources */,
 				2F427E125AEC30FAEE0208FC /* TestTableViewController.m in Sources */,
+				EBB32A991EB5A05500C5C796 /* CoolTableDataSource.m in Sources */,
 				EB09EE561EAC5B8800D888E3 /* ApplicationAssembly.m in Sources */,
 				C29C7EDF9FD726A593E9609F /* TestTablePresenter.m in Sources */,
 				7EDAE0803F5637CF177D332F /* TestTableInteractor.m in Sources */,

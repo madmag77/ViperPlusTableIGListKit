@@ -28,6 +28,8 @@
         make.edges.equalTo(self.contentView);
     }];
     
+    UILongPressGestureRecognizer *longTapRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(didLongTap)];
+    [self.contentView addGestureRecognizer: longTapRecognizer];
     return self;
 }
 
@@ -40,9 +42,22 @@
     self.label.text = @"";
 }
 
-- (void)bindToModel:(NSString *)labelText andSelected:(bool)selected {
+- (void)didLongTap {
+    if (self.delegate) {
+        [self.delegate didLongTap];
+    }
+}
+                                                    
+- (void)setHeaderText:(NSString *)text {
+    self.label.text = text;
+}
+
+- (void)setIsSelected:(bool)selected {
     self.contentView.backgroundColor = selected ? UIColor.orangeColor : UIColor.lightGrayColor;
-    self.label.text = labelText;
+}
+
+- (void)setDelegateForLongTap:(id<CoolTableHeaderCellDelegate>)delegate {
+    self.delegate = delegate;
 }
 
 @end

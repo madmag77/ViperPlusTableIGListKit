@@ -21,10 +21,10 @@
 
 - (NSArray<id<IGListDiffable>> *)getAllTheData {
     NSMutableArray<TableRowSectionModel *> *sortedData = [@[[[TableRowHeaderSectionModel alloc]  initWithRowHeight:50.0 andHeaders: @[
-                            [[TableCellModel alloc] initWithLabel: @"First"],
-                            [[TableCellModel alloc] initWithLabel: @"Second"],
-                            [[TableCellModel alloc] initWithLabel: @"Third"],
-                            [[TableCellModel alloc] initWithLabel: @"Fours"]]]] mutableCopy];
+                            [[DataCellModel alloc] initWithLabel: @"First"],
+                            [[DataCellModel alloc] initWithLabel: @"Second"],
+                            [[DataCellModel alloc] initWithLabel: @"Third"],
+                            [[DataCellModel alloc] initWithLabel: @"Fours"]]]] mutableCopy];
    
     [sortedData addObjectsFromArray:[self.data sortedArrayUsingComparator:^NSComparisonResult(TableRowSectionModel *obj1, TableRowSectionModel *obj2) {
         if (obj1.index < obj2.index) return NSOrderedAscending;
@@ -37,27 +37,27 @@
 - (void)refreshData {
     self.data = @[
                   [[TableRowSectionModel alloc] initWithIndex:4 andData:@[
-                                                [[TableCellModel alloc] initWithLabel:@"4-1"],
-                                                [[TableCellModel alloc] initWithLabel:@"4-2"],
-                                                [[TableCellModel alloc] initWithLabel:@"4-3"],
-                                                [[TableCellModel alloc] initWithLabel:@"4-4"]]],
+                                                [[DataCellModel alloc] initWithLabel:@"4-1"],
+                                                [[DataCellModel alloc] initWithLabel:@"4-2"],
+                                                [[DataCellModel alloc] initWithLabel:@"4-3"],
+                                                [[DataCellModel alloc] initWithLabel:@"4-4"]]],
                   [[TableRowSectionModel alloc] initWithIndex:1 andData:@[
-                                                [[TableCellModel alloc] initWithLabel:@"1-1"],
-                                                [[TableCellModel alloc] initWithLabel:@"1-2"],
-                                                [[TableCellModel alloc] initWithLabel:@"1-3"]]],
+                                                [[DataCellModel alloc] initWithLabel:@"1-1"],
+                                                [[DataCellModel alloc] initWithLabel:@"1-2"],
+                                                [[DataCellModel alloc] initWithLabel:@"1-3"]]],
                   [[TableRowSectionModel alloc] initWithIndex:2 andData:@[
-                                                [[TableCellModel alloc] initWithLabel:@"2-1"],
-                                                [[TableCellModel alloc] initWithLabel:@"2-2"],
-                                                [[TableCellModel alloc] initWithLabel:@"2-3"]]],
+                                                [[DataCellModel alloc] initWithLabel:@"2-1"],
+                                                [[DataCellModel alloc] initWithLabel:@"2-2"],
+                                                [[DataCellModel alloc] initWithLabel:@"2-3"]]],
                   [[TableRowSectionModel alloc] initWithIndex:0 andData:@[
-                                                [[TableCellModel alloc] initWithLabel:@"0-1-2-3"]]],
+                                                [[DataCellModel alloc] initWithLabel:@"0-1-2-3"]]],
                   [[TableRowSectionModel alloc] initWithIndex:5 andData:@[
-                                                [[TableCellModel alloc] initWithLabel:@"5-1"],
-                                                [[TableCellModel alloc] initWithLabel:@"5-2"]]],
+                                                [[DataCellModel alloc] initWithLabel:@"5-1"],
+                                                [[DataCellModel alloc] initWithLabel:@"5-2"]]],
                   [[TableRowSectionModel alloc] initWithIndex:3 andData:@[
-                                                [[TableCellModel alloc] initWithLabel:@"3-1"],
-                                                [[TableCellModel alloc] initWithLabel:@"3-2"],
-                                                [[TableCellModel alloc] initWithLabel:@"3-3"]]],
+                                                [[DataCellModel alloc] initWithLabel:@"3-1"],
+                                                [[DataCellModel alloc] initWithLabel:@"3-2"],
+                                                [[DataCellModel alloc] initWithLabel:@"3-3"]]],
                   ];
 }
 

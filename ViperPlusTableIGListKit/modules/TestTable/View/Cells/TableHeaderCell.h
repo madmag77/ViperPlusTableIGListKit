@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CoolTableHeaderCellInput.h"
 
-@interface TableHeaderCell : UICollectionViewCell
+@interface TableHeaderCell : UICollectionViewCell<CoolTableHeaderCellInput>
+
 @property (weak, nonatomic) IBOutlet UILabel *label;
-
-- (void)bindToModel:(NSString *)labelText andSelected:(bool)selected;
+@property (weak, nonatomic) id<CoolTableHeaderCellDelegate> delegate;
 
 @end
