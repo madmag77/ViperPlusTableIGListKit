@@ -9,7 +9,14 @@
 #import "TableHeaderCell.h"
 #import <Masonry/Masonry.h>
 
+const CGSize PrefererredHeaderCellSize = {100, 50};
+
+@interface TableHeaderCell ()
+@property NSUInteger indexForCallBack;
+@end
+
 @implementation TableHeaderCell
+
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     
@@ -28,6 +35,8 @@
         make.edges.equalTo(self.contentView);
     }];
     
+    UILongPressGestureRecognizer *longTapRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(didLongTap)];
+    [self.contentView addGestureRecognizer: longTapRecognizer];
     return self;
 }
 
@@ -40,9 +49,38 @@
     self.label.text = @"";
 }
 
-- (void)bindToModel:(NSString *)labelText andSelected:(bool)selected {
+
+- (void)didLongTap {
+    if (self.delegate) {
+        [self.delegate didLongTapOnCellWithIndex:self.indexForCallBack];
+    }
+}
+
++ (CGSize)cellSize {
+    return PrefererredHeaderCellSize;
+}
+
+#pragma mark - Methods CoolTableHeaderCellInput
+
+- (void)setBold:(bool)bold {
+    if (bold) {
+        self.label.font = [UIFont boldSystemFontOfSize:16.0];
+    } else {
+        self.label.font = [UIFont systemFontOfSize:16.0];
+    }
+}
+
+- (void)setHeaderText:(NSString *)text {
+    self.label.text = text;
+}
+
+- (void)setIsSelected:(bool)selected {
     self.contentView.backgroundColor = selected ? UIColor.orangeColor : UIColor.lightGrayColor;
-    self.label.text = labelText;
+}
+
+- (void)setDelegateForLongTap:(id<CoolTableHeaderCellDelegate>)delegate  andCellIndex:(NSUInteger)index {
+    self.delegate = delegate;
+    self.indexForCallBack = index;
 }
 
 @end

@@ -9,6 +9,11 @@
 #import "TableCell.h"
 #import <Masonry/Masonry.h>
 
+#define DangerousColor UIColor.greenColor
+#define NormalColor UIColor.blackColor
+
+const CGSize PrefererredCellSize = {100, 100};
+
 @implementation TableCell
 
 - (id)initWithFrame:(CGRect)frame {
@@ -38,8 +43,22 @@
     self.label.text = @"";
 }
 
-- (void)bindToModel:(NSString *)labelText {
-    self.label.text = labelText;
++ (CGSize)cellSize {
+    return PrefererredCellSize;
+}
+
+#pragma mark - Methods CoolTableCellInput
+
+- (void)setCoolText:(NSString *)text {
+    self.label.text = text;
+}
+
+- (void)setDangerousMode:(bool)dangerous {
+    if (dangerous) {
+        self.label.textColor = DangerousColor;
+    } else {
+        self.label.textColor = NormalColor;
+    }
 }
 
 @end

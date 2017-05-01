@@ -10,11 +10,11 @@
 #import "TestTableViewOutput.h"
 #import "Masonry.h"
 #import <IGListKit/IGListKit.h>
+#import "CoolTableDataSource.h"
 
 @interface TestTableViewController ()
 @property (weak, nonatomic) IBOutlet IGListCollectionView *collectionView;
-@property (strong, nonatomic) IGListAdapter *adapter;
-
+@property (strong, nonatomic) CoolTableDataSource *dataSource;
 @end
 
 @implementation TestTableViewController
@@ -50,14 +50,14 @@
 
 #pragma mark - Misc functions
 - (void) createViewElements {
-    IGListCollectionView *collection = [[IGListCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout: [UICollectionViewFlowLayout new]];
+    IGListCollectionView *collection = [[IGListCollectionView alloc] initWithFrame:CGRectZero
+                                                              collectionViewLayout: [UICollectionViewFlowLayout new]];
     self.collectionView = collection;
     [self.view addSubview:collection];
     
-    self.adapter = [[IGListAdapter alloc] initWithUpdater:[IGListAdapterUpdater new] viewController:self workingRangeSize:0];
-    self.adapter.collectionView = collection;
-    self.output.adapter = self.adapter;
-    
+    self.dataSource = [[CoolTableDataSource alloc] initWithViewController:self
+                                                        andCollectionView:collection andEmptyView:nil];
+        
 }
 #pragma mark - Methods TestTableViewInput
 
@@ -65,6 +65,8 @@
     [self createViewElements];
 }
 
-
+- (id<CoolTableDataSourceProtocol>)getDataSource {
+    return self.dataSource;
+}
 
 @end

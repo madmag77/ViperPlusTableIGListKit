@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol TestTableRouterInput <NSObject>
--(void)goBack;
+- (void)goBack;
 @end

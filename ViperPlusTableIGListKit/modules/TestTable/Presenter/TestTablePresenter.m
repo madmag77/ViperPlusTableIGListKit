@@ -10,69 +10,29 @@
 #import "TestTableViewInput.h"
 #import "TestTableInteractorInput.h"
 #import "TestTableRouterInput.h"
-#import <IGListKit/IGListKit.h>
-#import "TableRowSectionController.h"
-#import "TableRowHeaderSectionController.h"
-#import "TableRowSectionModel.h"
+#import "CoolTableDataSource.h"
+#import "ModelsFactory.h"
 
-@interface TestTablePresenter() <IGListAdapterDataSource, TableRowHeaderSectionDelegate>
-
+@interface TestTablePresenter()
+@property (readonly) id<CoolTableDataSourceProtocol> dataSource;
 @end
 
-@implementation TestTablePresenter {
-    IGListAdapter *_adapter;
-}
+@implementation TestTablePresenter
 
 #pragma mark - Internals
 
-- (void)setAdapter:(IGListAdapter *)adapter {
-    _adapter = adapter;
-    adapter.dataSource = self;
-}
-
-- (IGListAdapter *)adapter {
-    return _adapter;
-}
-
-#pragma mark - IGListAdapterDelegate
-
-
-
-#pragma mark - IGListAdapterDataSource
-- (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    return [self.interactor getAllTheData];
-}
-
-- (IGListSectionController <IGListSectionType> *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    if ([object isKindOfClass:[TableRowSectionModel class]]) return [TableRowSectionController new];
-    if ([object isKindOfClass:[TableRowHeaderSectionModel class]]) {
-        TableRowHeaderSectionController *headerSection = [TableRowHeaderSectionController new];
-        headerSection.delegate = self;
-        return headerSection;
-    }
-    NSAssert(false, @"Unknown object of class %@", [object class]);
-    return nil;
-}
-
-- (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
-    return nil;
-}
-
-#pragma mark - Methods TableRowHeaderSectionDelegate
-- (void)didTapOnObject:(TableRowHeaderSectionModel *)object andIndexInRow:(NSUInteger)rowIndex {
-    object.headers[rowIndex].selected = !object.headers[rowIndex].selected;
-    [self.adapter reloadObjects:@[object]];
+- (id<CoolTableDataSourceProtocol>)dataSource {
+    return [self.view getDataSource];
 }
 
 #pragma mark - Methods TestTableModuleInput
 - (void)configureModule {
-  
+    
 }
 
 #pragma mark - Methods TestTableViewOutput
 - (void) viewWillApear {
     [self.interactor refreshData];
-    [self.adapter performUpdatesAnimated:NO completion:nil];
 }
 
 - (void)didTriggerViewReadyEvent {
@@ -82,6 +42,26 @@
 - (void)backBtnTap {
     [self.router goBack];
 }
-#pragma mark - Methods TestTableInteractorOutput
 
+#pragma mark - Methods TestTableInteractorOutput
+- (void)dataUpdated:(NSArray *)data {
+    NSMutableArray<IGListDiffable> *models = [@[] mutableCopy];
+    [models addObject:[ModelsFactory getHeaderModelWithData:@[
+                                                              [[DataCellModel alloc] initWithLabel:@"First"],
+                                                              [[DataCellModel alloc] initWithLabel:@"Second"],
+                                                              [[DataCellModel alloc] initWithLabel:@"Third"],
+                                                              [[DataCellModel alloc] initWithLabel:@"Fours"]]
+                                              andDataSource:self.dataSource]];
+    [data enumerateObjectsUsingBlock:^(NSArray *_Nonnull obj,
+                                       NSUInteger idx,
+                                       BOOL * _Nonnull stop) {
+        
+        [models addObject:[ModelsFactory getCellModelWithData:obj
+                                                     andIndex:idx
+                                                andDataSource:self.dataSource]];
+    }];
+    
+    self.dataSource.models = models;
+    [self.dataSource updateTable];
+}
 @end

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol TestTableInteractorOutput <NSObject>
-
+- (void)dataUpdated:(NSArray *)data;
 @end

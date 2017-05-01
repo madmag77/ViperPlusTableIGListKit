@@ -8,25 +8,29 @@
 
 #import <Foundation/Foundation.h>
 #import <IGListKit/IGListKit.h>
+#import "CoolTableCellInput.h"
+#import "CoolTableHeaderCellInput.h"
 
-@interface TableCellModel : NSObject
+@interface DataCellModel : NSObject
 @property bool selected;
 @property NSString *label;
 - (id)initWithLabel:(NSString *)label;
-
 @end
 
 @interface TableRowSectionModel : NSObject <IGListDiffable>
-@property NSArray<NSString *> *cells;
+@property NSArray<DataCellModel *> *cells;
 @property NSUInteger index;
 @property NSString *name;
 @property CGSize cellSize;
-- (id)initWithIndex:(NSUInteger)index andData:(NSArray<NSString *> *)data;
+- (id)initWithIndex:(NSUInteger)index andData:(NSArray<DataCellModel *> *)data;
+- (void)setupView:(id<CoolTableCellInput>)cell atIndex:(NSInteger)index;
 @end
 
 @interface TableRowHeaderSectionModel : NSObject <IGListDiffable>
-@property NSArray<TableCellModel *> *headers;
+@property NSArray<DataCellModel *> *headers;
 @property CGSize cellSize;
 
-- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<TableCellModel *> *)headers;
+- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<DataCellModel *> *)headers;
+- (void)setupView:(id<CoolTableHeaderCellInput>)cell atIndex:(NSInteger)index;
+
 @end
