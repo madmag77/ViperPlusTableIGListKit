@@ -35,6 +35,8 @@
     [cell setDangerousMode:arc4random_uniform(2) == 1];
 }
 
+#pragma mark - Methods IGListDiffable
+
 - (nonnull id<NSObject>)diffIdentifier {
     return self;
 }
@@ -64,16 +66,30 @@
 
 - (void)setupView:(id<CoolTableHeaderCellInput>)cell
           atIndex:(NSInteger)index {
-    
+    NSAssert(index <  self.headers.count, @"index in setupView is out of bounds");
+   
     DataCellModel *cellModel = self.headers[index];
     [cell setHeaderText:cellModel.label];
     [cell setIsSelected:cellModel.selected];
+    [cell setBold:cellModel.bold];
+    [cell setDelegateForLongTap:self andCellIndex:index];
 }
 
 - (void)didTapOnItemAtIndex:(NSInteger)index {
     self.headers[index].selected = !self.headers[index].selected;
     [self.dataSource updateCellsWitModels:(NSArray<IGListDiffable> *)(@[self])];
 }
+
+#pragma mark - Methods CoolTableHeaderCellDelegate
+
+- (void)didLongTapOnCellWithIndex:(NSUInteger)index {
+    NSAssert(index <  self.headers.count, @"index in didLongTapOnCellWithIndex is out of bounds");
+    
+    self.headers[index].bold = !self.headers[index].bold;
+    [self.dataSource updateCellsWitModels:(NSArray<IGListDiffable> *)(@[self])];
+}
+
+#pragma mark - Methods IGListDiffable
 
 - (nonnull id<NSObject>)diffIdentifier {
     return self;

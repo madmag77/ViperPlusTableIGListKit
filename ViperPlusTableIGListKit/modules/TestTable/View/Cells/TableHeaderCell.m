@@ -8,7 +8,12 @@
 
 #import "TableHeaderCell.h"
 #import <Masonry/Masonry.h>
+
 const CGSize PrefererredHeaderCellSize = {100, 50};
+
+@interface TableHeaderCell ()
+@property NSUInteger indexForCallBack;
+@end
 
 @implementation TableHeaderCell
 
@@ -44,12 +49,27 @@ const CGSize PrefererredHeaderCellSize = {100, 50};
     self.label.text = @"";
 }
 
+
 - (void)didLongTap {
     if (self.delegate) {
-        [self.delegate didLongTap];
+        [self.delegate didLongTapOnCellWithIndex:self.indexForCallBack];
     }
 }
-                                                    
+
++ (CGSize)cellSize {
+    return PrefererredHeaderCellSize;
+}
+
+#pragma mark - Methods CoolTableHeaderCellInput
+
+- (void)setBold:(bool)bold {
+    if (bold) {
+        self.label.font = [UIFont boldSystemFontOfSize:16.0];
+    } else {
+        self.label.font = [UIFont systemFontOfSize:16.0];
+    }
+}
+
 - (void)setHeaderText:(NSString *)text {
     self.label.text = text;
 }
@@ -58,12 +78,9 @@ const CGSize PrefererredHeaderCellSize = {100, 50};
     self.contentView.backgroundColor = selected ? UIColor.orangeColor : UIColor.lightGrayColor;
 }
 
-- (void)setDelegateForLongTap:(id<CoolTableHeaderCellDelegate>)delegate {
+- (void)setDelegateForLongTap:(id<CoolTableHeaderCellDelegate>)delegate  andCellIndex:(NSUInteger)index {
     self.delegate = delegate;
-}
-
-+ (CGSize)cellSize {
-    return PrefererredHeaderCellSize;
+    self.indexForCallBack = index;
 }
 
 @end

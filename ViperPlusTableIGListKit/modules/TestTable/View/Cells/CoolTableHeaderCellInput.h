@@ -7,11 +7,12 @@
 //
 
 @protocol CoolTableHeaderCellDelegate <NSObject>
-- (void)didLongTap;
+- (void)didLongTapOnCellWithIndex:(NSUInteger)index;
 @end
 
 @protocol CoolTableHeaderCellInput <NSObject>
 - (void)setHeaderText:(NSString *)text;
 - (void)setIsSelected:(bool)selected;
-- (void)setDelegateForLongTap:(id<CoolTableHeaderCellDelegate>)delegate;
+- (void)setBold:(bool)bold;
+- (void)setDelegateForLongTap:(id<CoolTableHeaderCellDelegate>)delegate andCellIndex:(NSUInteger)index;
 @end

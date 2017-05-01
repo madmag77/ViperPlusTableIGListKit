@@ -11,6 +11,7 @@
 
 #define DangerousColor UIColor.greenColor
 #define NormalColor UIColor.blackColor
+
 const CGSize PrefererredCellSize = {100, 100};
 
 @implementation TableCell
@@ -42,6 +43,12 @@ const CGSize PrefererredCellSize = {100, 100};
     self.label.text = @"";
 }
 
++ (CGSize)cellSize {
+    return PrefererredCellSize;
+}
+
+#pragma mark - Methods CoolTableCellInput
+
 - (void)setCoolText:(NSString *)text {
     self.label.text = text;
 }
@@ -54,7 +61,4 @@ const CGSize PrefererredCellSize = {100, 100};
     }
 }
 
-+ (CGSize)cellSize {
-    return PrefererredCellSize;
-}
 @end

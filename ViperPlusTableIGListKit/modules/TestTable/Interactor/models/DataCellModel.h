@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @interface DataCellModel : NSObject
 @property bool selected;
+@property bool bold;
 @property NSString *label;
 - (id)initWithLabel:(NSString *)label;
 @end

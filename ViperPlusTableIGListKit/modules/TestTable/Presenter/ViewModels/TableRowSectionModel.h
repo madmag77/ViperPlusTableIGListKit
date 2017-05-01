@@ -27,7 +27,7 @@
 @end
 
 
-@interface TableRowHeaderSectionModel : NSObject <IGListDiffable>
+@interface TableRowHeaderSectionModel : NSObject <IGListDiffable, CoolTableHeaderCellDelegate>
 @property NSArray<DataCellModel *> *headers;
 @property (weak, nonatomic) id<CoolTableDataSourceProtocol> dataSource;
 
