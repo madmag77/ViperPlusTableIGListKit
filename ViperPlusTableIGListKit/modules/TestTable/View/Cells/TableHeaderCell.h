@@ -14,5 +14,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) id<CoolTableHeaderCellDelegate> delegate;
-
++ (CGSize)cellSize;
 @end

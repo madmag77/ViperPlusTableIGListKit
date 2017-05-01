@@ -21,10 +21,15 @@
 @implementation CoolTableDataSource
 @synthesize models;
 
-- (id)initWithViewController:(UIViewController *)viewController andCollectionView:(IGListCollectionView *)collectionView andEmptyView:(UIView *)emptyView {
+- (id)initWithViewController:(UIViewController *)viewController
+           andCollectionView:(IGListCollectionView *)collectionView
+                andEmptyView:(UIView *)emptyView {
     self = [super init];
     if (self) {
-        self.adapter = [[IGListAdapter alloc] initWithUpdater:[IGListAdapterUpdater new] viewController:viewController workingRangeSize:0];
+        self.adapter = [[IGListAdapter alloc] initWithUpdater:[IGListAdapterUpdater new]
+                                               viewController:viewController
+                                             workingRangeSize:0];
+        
         self.adapter.collectionView = collectionView;
         self.emptyView = emptyView;
         self.adapter.dataSource = self;
@@ -45,13 +50,19 @@
     return self.models;
 }
 
-- (IGListSectionController <IGListSectionType> *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    if ([object isKindOfClass:[TableRowSectionModel class]]) return [TableRowSectionController new];
+- (IGListSectionController <IGListSectionType> *)listAdapter:(IGListAdapter *)listAdapter
+                                  sectionControllerForObject:(id)object {
+    
+    if ([object isKindOfClass:[TableRowSectionModel class]]) {
+        return [TableRowSectionController new];
+    }
+    
     if ([object isKindOfClass:[TableRowHeaderSectionModel class]]) {
         TableRowHeaderSectionController *headerSection = [TableRowHeaderSectionController new];
         return headerSection;
     }
-    NSAssert(false, @"Unknown object of class %@", [object class]);
+    
+    NSAssert(NO, @"Unknown object of class %@", [object class]);
     return nil;
 }
 

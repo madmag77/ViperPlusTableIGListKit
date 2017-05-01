@@ -14,7 +14,7 @@
 
 #pragma mark - Методы TestTableRouterInput
 -(void)goBack {
-    [self.transitionHandler closeCurrentModule:true];
+    [self.transitionHandler closeCurrentModule:YES];
 }
 
 @end

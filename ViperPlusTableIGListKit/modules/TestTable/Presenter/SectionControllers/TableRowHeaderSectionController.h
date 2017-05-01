@@ -11,7 +11,8 @@
 #import "TableRowSectionModel.h"
 
 @protocol TableRowHeaderSectionDelegate
-- (void)didTapOnObject:(TableRowHeaderSectionModel *)object andIndexInRow:(NSUInteger)rowIndex;
+- (void)didTapOnObject:(TableRowHeaderSectionModel *)object
+         andIndexInRow:(NSUInteger)rowIndex;
 
 @end
 

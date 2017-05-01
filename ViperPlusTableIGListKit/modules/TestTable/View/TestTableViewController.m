@@ -50,11 +50,13 @@
 
 #pragma mark - Misc functions
 - (void) createViewElements {
-    IGListCollectionView *collection = [[IGListCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout: [UICollectionViewFlowLayout new]];
+    IGListCollectionView *collection = [[IGListCollectionView alloc] initWithFrame:CGRectZero
+                                                              collectionViewLayout: [UICollectionViewFlowLayout new]];
     self.collectionView = collection;
     [self.view addSubview:collection];
     
-    self.dataSource = [[CoolTableDataSource alloc] initWithViewController:self andCollectionView:collection andEmptyView:nil];
+    self.dataSource = [[CoolTableDataSource alloc] initWithViewController:self
+                                                        andCollectionView:collection andEmptyView:nil];
         
 }
 #pragma mark - Methods TestTableViewInput

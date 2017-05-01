@@ -11,6 +11,7 @@
 
 #define DangerousColor UIColor.greenColor
 #define NormalColor UIColor.blackColor
+const CGSize PrefererredCellSize = {100, 100};
 
 @implementation TableCell
 
@@ -51,5 +52,9 @@
     } else {
         self.label.textColor = NormalColor;
     }
+}
+
++ (CGSize)cellSize {
+    return PrefererredCellSize;
 }
 @end

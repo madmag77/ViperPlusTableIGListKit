@@ -8,8 +8,10 @@
 
 #import "TableHeaderCell.h"
 #import <Masonry/Masonry.h>
+const CGSize PrefererredHeaderCellSize = {100, 50};
 
 @implementation TableHeaderCell
+
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     
@@ -58,6 +60,10 @@
 
 - (void)setDelegateForLongTap:(id<CoolTableHeaderCellDelegate>)delegate {
     self.delegate = delegate;
+}
+
++ (CGSize)cellSize {
+    return PrefererredHeaderCellSize;
 }
 
 @end

@@ -11,7 +11,6 @@
 #import "TestTableInteractorInput.h"
 #import "TestTableRouterInput.h"
 #import "CoolTableDataSource.h"
-#import "TableRowSectionModel.h"
 #import "ModelsFactory.h"
 
 @interface TestTablePresenter()
@@ -28,7 +27,7 @@
 
 #pragma mark - Methods TestTableModuleInput
 - (void)configureModule {
-  
+    
 }
 
 #pragma mark - Methods TestTableViewOutput
@@ -51,9 +50,15 @@
                                                               [[DataCellModel alloc] initWithLabel:@"First"],
                                                               [[DataCellModel alloc] initWithLabel:@"Second"],
                                                               [[DataCellModel alloc] initWithLabel:@"Third"],
-                                                              [[DataCellModel alloc] initWithLabel:@"Fours"]] andRowHeight:50.0 andDataSource:self.dataSource]];
-    [data enumerateObjectsUsingBlock:^(NSArray *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [models addObject:[ModelsFactory getCellModelWithData:obj andIndex:idx andDataSource:self.dataSource]];
+                                                              [[DataCellModel alloc] initWithLabel:@"Fours"]]
+                                              andDataSource:self.dataSource]];
+    [data enumerateObjectsUsingBlock:^(NSArray *_Nonnull obj,
+                                       NSUInteger idx,
+                                       BOOL * _Nonnull stop) {
+        
+        [models addObject:[ModelsFactory getCellModelWithData:obj
+                                                     andIndex:idx
+                                                andDataSource:self.dataSource]];
     }];
     
     self.dataSource.models = models;

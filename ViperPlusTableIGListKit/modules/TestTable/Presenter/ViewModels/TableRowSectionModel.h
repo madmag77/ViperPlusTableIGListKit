@@ -17,19 +17,24 @@
 @property NSArray<DataCellModel *> *cells;
 @property NSUInteger index;
 @property NSString *name;
-@property CGSize cellSize;
 @property (weak, nonatomic) id<CoolTableDataSourceProtocol> dataSource;
 
-- (id)initWithIndex:(NSUInteger)index andData:(NSArray<DataCellModel *> *)data andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
-- (void)setupView:(id<CoolTableCellInput>)cell atIndex:(NSInteger)index;
+- (id)initWithIndex:(NSUInteger)index andData:(NSArray<DataCellModel *> *)data
+      andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
+
+- (void)setupView:(id<CoolTableCellInput>)cell
+          atIndex:(NSInteger)index;
 @end
+
 
 @interface TableRowHeaderSectionModel : NSObject <IGListDiffable>
 @property NSArray<DataCellModel *> *headers;
-@property CGSize cellSize;
 @property (weak, nonatomic) id<CoolTableDataSourceProtocol> dataSource;
 
-- (id)initWithRowHeight:(CGFloat)rowHeight andHeaders:(NSArray<DataCellModel *> *)headers andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
-- (void)setupView:(id<CoolTableHeaderCellInput>)cell atIndex:(NSInteger)index ;
+- (id)initWithHeaders:(NSArray<DataCellModel *> *)headers
+        andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
+
+- (void)setupView:(id<CoolTableHeaderCellInput>)cell
+          atIndex:(NSInteger)index ;
 - (void)didTapOnItemAtIndex:(NSInteger)index;
 @end

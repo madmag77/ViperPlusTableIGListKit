@@ -13,7 +13,7 @@
     self = [super init];
     if (self) {
         self.label = label;
-        self.selected = false;
+        self.selected = NO;
     }
     return self;
 }

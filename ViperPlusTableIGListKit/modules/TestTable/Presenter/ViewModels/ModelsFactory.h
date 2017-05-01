@@ -13,6 +13,10 @@
 @protocol IGListDiffable;
 
 @interface ModelsFactory : NSObject
-+ (id<IGListDiffable>)getHeaderModelWithData:(NSArray<DataCellModel *> *)data andRowHeight:(float)rowHeight andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
-+ (id<IGListDiffable>)getCellModelWithData:(NSArray<DataCellModel *> *)data andIndex:(NSUInteger)index andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
++ (id<IGListDiffable>)getHeaderModelWithData:(NSArray<DataCellModel *> *)data
+                               andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
+
++ (id<IGListDiffable>)getCellModelWithData:(NSArray<DataCellModel *> *)data
+                                  andIndex:(NSUInteger)index
+                             andDataSource:(id<CoolTableDataSourceProtocol>)dataSource;
 @end

@@ -12,5 +12,5 @@
 
 @interface TableCell : UICollectionViewCell <CoolTableCellInput>
 @property (weak, nonatomic) IBOutlet UILabel *label;
-
++ (CGSize)cellSize;
 @end

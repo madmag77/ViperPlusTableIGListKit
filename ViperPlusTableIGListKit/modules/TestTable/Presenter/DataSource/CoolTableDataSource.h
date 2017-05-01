@@ -14,5 +14,7 @@
 @class UIView;
 
 @interface CoolTableDataSource : NSObject<CoolTableDataSourceProtocol>
-- (id)initWithViewController:(UIViewController *)viewController andCollectionView:(IGListCollectionView *)collectionView andEmptyView:(UIView *)emptyView;
+- (id)initWithViewController:(UIViewController *)viewController
+           andCollectionView:(IGListCollectionView *)collectionView
+                andEmptyView:(UIView *)emptyView;
 @end
