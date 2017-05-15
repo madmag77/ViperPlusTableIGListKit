@@ -22,7 +22,7 @@
 @synthesize models;
 
 - (id)initWithViewController:(UIViewController *)viewController
-           andCollectionView:(IGListCollectionView *)collectionView
+           andCollectionView:(UICollectionView *)collectionView
                 andEmptyView:(UIView *)emptyView {
     self = [super init];
     if (self) {

@@ -10,11 +10,11 @@
 #import "CoolTableDataSourceProtocol.h"
 
 @class UIViewController;
-@class IGListCollectionView;
+@class UICollectionView;
 @class UIView;
 
 @interface CoolTableDataSource : NSObject<CoolTableDataSourceProtocol>
 - (id)initWithViewController:(UIViewController *)viewController
-           andCollectionView:(IGListCollectionView *)collectionView
+           andCollectionView:(UICollectionView *)collectionView
                 andEmptyView:(UIView *)emptyView;
 @end
