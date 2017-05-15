@@ -50,7 +50,7 @@
     return self.models;
 }
 
-- (IGListSectionController <IGListSectionType> *)listAdapter:(IGListAdapter *)listAdapter
+- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter
                                   sectionControllerForObject:(id)object {
     
     if ([object isKindOfClass:[TableRowSectionModel class]]) {

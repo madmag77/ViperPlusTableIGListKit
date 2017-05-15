@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <IGListKit/IGListKit.h>
 
-@interface TableRowSectionController : IGListSectionController <IGListSectionType>
+@interface TableRowSectionController : IGListSectionController
 
 @end

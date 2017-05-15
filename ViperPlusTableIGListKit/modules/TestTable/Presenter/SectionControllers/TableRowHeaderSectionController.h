@@ -16,6 +16,6 @@
 
 @end
 
-@interface TableRowHeaderSectionController : IGListSectionController <IGListSectionType>
+@interface TableRowHeaderSectionController : IGListSectionController
 @property (weak, nonatomic) id<TableRowHeaderSectionDelegate> delegate;
 @end

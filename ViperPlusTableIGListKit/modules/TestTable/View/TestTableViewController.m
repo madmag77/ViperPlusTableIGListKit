@@ -13,7 +13,7 @@
 #import "CoolTableDataSource.h"
 
 @interface TestTableViewController ()
-@property (weak, nonatomic) IBOutlet IGListCollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) CoolTableDataSource *dataSource;
 @end
 
@@ -50,9 +50,10 @@
 
 #pragma mark - Misc functions
 - (void) createViewElements {
-    IGListCollectionView *collection = [[IGListCollectionView alloc] initWithFrame:CGRectZero
+    UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero
                                                               collectionViewLayout: [UICollectionViewFlowLayout new]];
     self.collectionView = collection;
+    self.collectionView.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:collection];
     
     self.dataSource = [[CoolTableDataSource alloc] initWithViewController:self
